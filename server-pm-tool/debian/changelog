@@ -1,0 +1,5 @@
+server-pm-control (1.0.0) UNRELEASED; urgency=medium
+
+  * Initial release. (Closes: #XXXXXX)
+
+ -- Marko Hoyer <mhoyer.oss-devel@freenet.de>  Sun, 06 Oct 2024 23:37:32 +0200

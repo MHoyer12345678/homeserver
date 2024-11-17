@@ -1,0 +1,15 @@
+Source: server-pm-control
+Section: embedded
+Priority: optional
+Maintainer: Marko Hoyer <mhoyer.oss-devel@freenet.de>
+Build-Depends: debhelper (>= 10), libgpiod-2.2-dev, pkgconf
+Standards-Version: 4.1.2
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: https://anonscm.debian.org/git/collab-maint/retroradio-ctrl.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/retroradio-ctrl.git
+
+Package: server-pm-control
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, minicom
+Description: Controls server power states
+ This tool is used to print the home servers power state and controls its power and reset functionality

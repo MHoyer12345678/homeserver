@@ -1,0 +1,12 @@
+[Unit]
+Description="Setting up access rights to server access devices"
+DefaultDependencies=no
+Before=basic.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/chmod a+rw /dev/ttyS2 /dev/gpiochip0 /dev/gpiochip1
+
+[Install]
+WantedBy=multi-user.target
+

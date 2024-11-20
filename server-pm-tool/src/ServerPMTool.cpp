@@ -39,7 +39,7 @@ Sequence to power off server:
 //waits for this time until checking the power status after pressing the power btn
 #define PWR_OFF_WAIT_TIME_INTV_TO_CHK_US     100000L //100ms
 //checks up to this value times for power up signal until giving up
-#define PWR_OFF_MAX_RETRY_CHECK_PWR_STATE    50      //50x100ms -> 5s
+#define PWR_OFF_MAX_RETRY_CHECK_PWR_STATE    80      //50x100ms -> 5s
 
 using namespace server_pm_tool;
 using namespace std;

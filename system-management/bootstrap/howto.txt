@@ -1,0 +1,17 @@
+Manual how to bootstrap an image for a orange pi zero based server management pc
+
+----- Prepare SD card ----------------------------------------------------------------------------
+- create one or two ext4 partitions
+- flash orange pi uboot (as per manual or using armbian image)
+- build new kernel and create kernel pkg (see howto.txt in kernel folder)
+- build gpiod2.2 and server-pm-control (mhoyer@github) packages and add to local debian repository
+- adapt in armbianEnv.txt "rootdev=PARTUUID=124ba97e-02" to partition id of SD CARD partition to boot from
+- create initial rfs using 01_assemble_rfs.sh
+- create online package using 02_create-online-package.sh
+- create image of initial rfs incl. online package using 03b_pack_image.sh
+- unpack image to first partition of SD card
+- boot from SD card
+- login as root
+- call /root/online-package/04_install-software.sh
+- reboot
+

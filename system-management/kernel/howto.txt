@@ -1,0 +1,7 @@
+# how to build a customized kernel for retroradio
+- checkout cross-build-utils from here: https://github.com/MHoyer12345678/cross-build-utils.git
+- add cross-kernel-tools path to your execution path ($PATH)
+- checkout /place kernel tree into ./linux directory
+- configure respectively (e.g. using config files in this folder)
+- use scripts from cross-build-utils to build an pack kernel
+- packed kernel is then used by bootstrap scripts to create final image

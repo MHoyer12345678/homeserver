@@ -1,0 +1,9 @@
+verbosity=6
+bootlogo=false
+console=serial
+disp_mode=1920x1080p60
+overlay_prefix=sun8i-h3
+rootfstype=ext4
+usbstoragequirks=0x2537:0x1066:u,0x2537:0x1068:u
+rootdev=PARTUUID=124ba97e-02
+# rootdev=PARTUUID=124ba97e-01
